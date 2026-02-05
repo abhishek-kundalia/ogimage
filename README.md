@@ -1,8 +1,8 @@
-# ogimage
+# ogimage-art
 
 Generate beautiful OG images for social sharing. Simple API wrapper for [ogimage.art](https://ogimage.art).
 
-[![npm version](https://badge.fury.io/js/ogimage.svg)](https://www.npmjs.com/package/ogimage)
+[![npm version](https://badge.fury.io/js/ogimage-art.svg)](https://www.npmjs.com/package/ogimage-art)
 
 ## Installation
 
