@@ -1,0 +1,36 @@
+{
+  "name": "ogimage",
+  "version": "1.0.0",
+  "description": "Generate beautiful OG images for social sharing. Simple API wrapper for ogimage.art",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "og-image",
+    "open-graph",
+    "social-image",
+    "meta-image",
+    "twitter-card",
+    "seo",
+    "image-generation"
+  ],
+  "author": "ogimage.art",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbhisheKundalia/ogimage"
+  },
+  "homepage": "https://ogimage.art",
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
