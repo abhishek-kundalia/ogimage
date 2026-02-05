@@ -7,13 +7,13 @@ Generate beautiful OG images for social sharing. Simple API wrapper for [ogimage
 ## Installation
 
 ```bash
-npm install ogimage
+npm install ogimage-art
 ```
 
 ## Quick Start
 
 ```javascript
-import { generateUrl } from 'ogimage';
+import { generateUrl } from 'ogimage-art';
 
 // Generate a URL (no API call needed)
 const url = generateUrl({
@@ -33,7 +33,7 @@ const url = generateUrl({
 The simplest approach - just generate the URL and let browsers/crawlers fetch the image directly:
 
 ```javascript
-import { generateUrl, getMetaTags } from 'ogimage';
+import { generateUrl, getMetaTags } from 'ogimage-art';
 
 // Simple URL
 const imageUrl = generateUrl({ title: 'My Blog Post' });
@@ -51,7 +51,7 @@ const meta = getMetaTags({
 If you need the actual image file:
 
 ```javascript
-import { generate, generateToFile } from 'ogimage';
+import { generate, generateToFile } from 'ogimage-art';
 
 // Get as Buffer
 const buffer = await generate({ title: 'My Post' });
@@ -63,7 +63,7 @@ await generateToFile({ title: 'My Post' }, './og-image.png');
 ### With License Key (Remove Watermark)
 
 ```javascript
-import { createClient } from 'ogimage';
+import { createClient } from 'ogimage-art';
 
 const og = createClient({
   licenseKey: 'YOUR_LICENSE_KEY'
@@ -95,7 +95,7 @@ const url = og.generateUrl({ title: 'No Watermark!' });
 
 ```javascript
 // app/blog/[slug]/page.tsx
-import { generateUrl } from 'ogimage';
+import { generateUrl } from 'ogimage-art';
 
 export async function generateMetadata({ params }) {
   const post = await getPost(params.slug);
@@ -115,7 +115,7 @@ export async function generateMetadata({ params }) {
 
 ```javascript
 // pages/blog/[slug].tsx
-import { getMetaTags } from 'ogimage';
+import { getMetaTags } from 'ogimage-art';
 import Head from 'next/head';
 
 export default function Post({ post }) {
@@ -135,7 +135,7 @@ export default function Post({ post }) {
 
 ```astro
 ---
-import { generateUrl } from 'ogimage';
+import { generateUrl } from 'ogimage-art';
 
 const ogImage = generateUrl({
   title: frontmatter.title,
@@ -148,7 +148,7 @@ const ogImage = generateUrl({
 ### Remix
 
 ```javascript
-import { generateUrl } from 'ogimage';
+import { generateUrl } from 'ogimage-art';
 
 export const meta = ({ data }) => {
   return [
