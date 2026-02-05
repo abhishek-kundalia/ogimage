@@ -1,6 +1,6 @@
 {
   "name": "ogimage-art",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate beautiful OG images for social sharing. Simple API wrapper for ogimage.art",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

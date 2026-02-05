@@ -32,7 +32,7 @@ export interface OGImageConfig {
   licenseKey?: string;
 }
 
-const DEFAULT_BASE_URL = 'https://ogimage.art';
+const DEFAULT_BASE_URL = 'https://www.ogimage.art';
 
 /**
  * Generate an OG image URL
